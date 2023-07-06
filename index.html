@@ -31,7 +31,15 @@
         let quoteSize = QUOTEBANK.length;
         let randomIndex = Math.floor(Math.random() * quoteSize);
         let randomQuoteData = QUOTEBANK[randomIndex];
+        let tweetQuote = 'https://www.twitter.com/intent/tweet?text=';
 
+        let quoteInApiFormat = randomQuoteData.quote.replace(/ /g, '%20');
+        tweetQuote += quoteInApiFormat;
+
+        let authorInApiFormat = randomQuoteData.author.replace(/ /g, '%20');
+        tweetQuote += ' - ' + authorInApiFormat;
+
+        document.getElementById('tweet-quote').href = tweetQuote;
         document.getElementById('text').innerText = randomQuoteData.quote;
         document.getElementById('author').innerText = randomQuoteData.author;
       }
@@ -42,7 +50,7 @@
       <div id="text"></div>
       <div id="author"></div>
       <button id="new-quote" onClick="generateQuote()">New Quote</button>
-      <a href="twitter.com/intent/tweet" id="tweet-quote">Tweet Quote</a>
+      <a href="#" id="tweet-quote" target="_blank">Tweet Quote</a>
     </wrapper>
     <div class="test-enviornment">
       <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
