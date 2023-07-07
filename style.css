@@ -1,12 +1,12 @@
 #quote-box {
-  margin: 30vh auto;
-  padding: 20px;
+  margin: auto;
   border: 5px black solid;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
   font-size: 2rem;
+  width: 500px;
 }
 
 #text {
