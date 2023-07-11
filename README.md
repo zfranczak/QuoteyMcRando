@@ -1,1 +1,1 @@
-##[Random Quote Generator](https://zfranczak.github.io/QuoteyMcRando/)
+## [Random Quote Generator](https://zfranczak.github.io/QuoteyMcRando/)
