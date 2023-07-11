@@ -12,22 +12,8 @@
       crossorigin="anonymous"
     />
     <title>Random Quote Machine</title>
-    <script>
-      const QUOTEBANK = [
-        {
-          quote: 'Be yourself; everyone else is already taken.',
-          author: 'Oscar Wilde',
-        },
-        {
-          quote:
-            "I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.",
-          author: 'Marilyn Monroe',
-        },
-        {
-          quote: 'So many books, so little time.',
-          author: 'Frank Zappa',
-        },
-      ];
+    <script src="quotes.js"></script>
+    <script>      
       window.onload = init;
       function init() {
         generateQuote();
@@ -57,7 +43,7 @@
         <div class="col-md-6 offset-md-3">
           <wrapper id="quote-box">
             <div  class="card">
-              <div class="card-header">
+              <div class="card-header text-center">
                 Random Quote Machine
               </div>
               <div class="card-body">
