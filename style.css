@@ -1,6 +1,6 @@
 #quote-box {
   margin: auto;
-  border: 5px black solid;
+
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -11,15 +11,9 @@
 
 #text {
   margin-bottom: 20px;
-  border: 2px red solid;
 }
 
-#new-quote {
+/* #new-quote {
   width: 200px;
   margin: 0 auto 20px auto;
-}
-
-#tweet-quote {
-  border: 5px #46a9b7 solid;
-  background: #0088ff;
-}
+} */
